@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 200px;
+    height: 200px;    
+    display: inline-block;
+    background-color: white;
+    margin: 200px 0 0 100px;
+    position: relative;
+    border: 5px solid black;
+}
+
+.with-circle::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 200px;
+    background-color: red;
+    position: absolute;
+    left: 75px;
+    top: -20px;
+    z-index: -1;
+}
+
+.with-triangle::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    left: 75px;
+    top: -12px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
